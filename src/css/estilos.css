@@ -1,6 +1,5 @@
 html {
     color: #fff;
-    scroll-behavior: smooth;
 }
 
 body {
@@ -8,7 +7,7 @@ body {
     margin: 0 auto;
     max-width: 1120px;
     background: linear-gradient(150deg, #2f0331, #130220, #1f0436, #460972, #8516ca);
-    background-size: 120% 120%;
+
 }
 
 .cabecalho {
@@ -42,7 +41,6 @@ body {
 .cabecalho .menu li a {
     color: rgb(197, 196, 196);
     font-size: 15px;
-    text-transform: capitalize;
     padding-bottom: 2px;
 }
 
@@ -57,30 +55,30 @@ body {
     display: flex;
     min-height: calc(100vh - 125px);
     align-items: center;
-    gap: 50px;
+    gap: 60px;
     justify-content: space-between;
 }
 
 .home .informacoes {
     display: flex;
     flex-direction: column;
-    gap: 15px;
     letter-spacing: 1px;
     padding: 0 15px;
     max-width: 50%;
 }
 
+
 .home .informacoes h1 {
     font-family: "Raleway", sans-serif;
     font-size: 31px;
-    margin-bottom: 20px;
-    color: rgb(245, 241, 241);
+    margin-bottom: 30px;
+    color: rgb(226, 226, 226);
 }
 
 .home .informacoes p {
     color: rgb(218, 218, 218);
     font-size: 1.0em;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     font-weight: 500;
 }
 
@@ -113,7 +111,6 @@ body {
 .home .container-foto .foto {
     max-width: 270px;
     border-radius: 50%;
-    animation: ondas;
     animation: float 3s ease-in-out infinite;
     
 }
@@ -131,12 +128,12 @@ body {
 
 
 .sobre-mim {
-    margin-top: 5em;
-    margin-bottom: 20em;
+    margin-top: 5vw;
+    margin-bottom: 10vw;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 20px;
+    gap: 10px;
 }
 
 .sobre-mim h2{
@@ -155,13 +152,13 @@ body {
     color: rgb(255, 255, 255);
     opacity: 70%;
     font-size: 1em;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
     font-weight: 500;
     line-height: 25px;
 }
 
 .sobre-info {
-    margin-top: 10px;
+    margin-top: 30px;
     padding: 40px;
     display: flex;
     gap: 100px;
@@ -169,10 +166,10 @@ body {
 }
 
 .sobre-foto {
-    width: 200px;
-    height: 200px;
+    width: 240px;
+    height: 240px;
     border-radius: 50%;
-    background: linear-gradient(to right, #200331, #0b0233, #300122);
+    background: linear-gradient(to right, #370355, #1f105f, #300122);
     animation: float 3s ease-in-out infinite;
 }
 
@@ -210,18 +207,23 @@ body {
 }
 
 .texto-info .curriculo {
-    background-color: #20102c;;
-    color: white;
-    font-family: Poppins;
-    padding: 15px;
+    background-color: #20102c;
+    border: 1px solid rgb(129, 127, 127);
+    padding: 20px;
     border-radius: 15px;
-    border: 1px solid rgba(255, 255, 255, 0.219);
+}
+
+.texto-info .curriculo a {
+    font-size: 15px;
+    font-weight: 600;
+    color:rgb(197, 196, 196);
 }
 
 .curriculo:hover {
     cursor: pointer;
     transform: scale(1.1);
     transition: 0.3s;
+    color:rgb(241, 240, 240);
 }
 
 #projetos {
