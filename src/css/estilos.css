@@ -228,6 +228,7 @@ body {
 
 #projetos {
     margin-top: 6em;
+
 }
 
 #projetos h2{
@@ -253,14 +254,15 @@ body {
 
 #projetos ul li {
     display: flex;
-    align-items: center;
     flex-direction: column;
-    border: 1px solid rgb(54, 52, 54);
-    max-width: 250px;
+    align-items: center;
+    border: 1px solid rgb(129, 127, 127);
+    max-width: 300px;
     max-height: 300px;
     border-radius: 15px;
     background-color: #20102c;
     padding: 10px;
+    gap: 20px;
 }
 
 #projetos ul li:hover {
@@ -270,8 +272,6 @@ body {
 
 
 #projetos ul li img{
-    max-width: 250px;
-    max-height: 150px;
     border-radius: 15px;
     align-self: center;
     padding: 10px;
