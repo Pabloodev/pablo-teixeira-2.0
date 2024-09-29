@@ -7,7 +7,39 @@
     border: none;
     list-style: none;
     font-family: Poppins;
+    color: white;
+    text-decoration: none;
 }
+
+.hidden {
+    display: none;
+}
+
+/* MENU */
+
+.menu-container {
+    background-color: var(--bg-color);
+    border: 1px solid var(--purple-general);
+    position: absolute;
+    left: 5.5%;
+    top: 75%;
+    flex-direction: column;
+    text-align: center;
+}
+
+.menu-container ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 15px;
+    
+}
+
+.menu-container a:hover {
+    color: var(--gray-strong);
+    transition: 0.2s;
+}
+
 
 /* GLOBAL */
 
@@ -21,8 +53,6 @@ img {width: 40px;} /* Reseting IMG widths of web */
 
 body {
     background-color: var(--bg-color);
-    color: white;
-    
 }
 
 .secundarys-sections {
@@ -53,11 +83,17 @@ header {
     justify-content: space-between;
     padding: 3vw 7vw;
     border-bottom: 1px solid var(--purple-general);
+    position: relative;
 }
 
 .logo {
     font-weight: 600;
     font-size: 20px;
+}
+
+.change-theme {
+    display: flex;
+    gap: 20px;
 }
 
 button {
@@ -67,7 +103,7 @@ button {
 
 button:hover {
     transform: scale(1.1);
-    
+    transition: 0.2s;
 }
 
 section {
@@ -75,7 +111,11 @@ section {
     align-items: center;
     justify-content: center;
     gap: 10vw;
-    min-height: calc(100vh - 165px);
+    min-height: calc(100vh - 130px);
+}
+
+.home {
+    padding: 0vw 12vw;
 }
 
 .container-info {
@@ -125,4 +165,19 @@ section {
 
 .social-media li a:hover img{
     transform: scale(1.1);
+}
+
+#projetos {
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.up-btn {
+    position: absolute;
+    bottom: 1%;
+    right: 10%;
+}
+
+.up-btn img {
+    width: 60px;
 }
