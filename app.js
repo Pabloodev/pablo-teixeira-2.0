@@ -1,6 +1,6 @@
-// document.addEventListener("DOMContentLoaded", () => {
-//     alert('Olá galera! O site ainda está em desenvolvimento então algumas coisas ainda não funcionam. Espero que gostem!👉👈')
-// })
+document.addEventListener("DOMContentLoaded", () => {
+    alert('Olá galera! O site ainda está em desenvolvimento então algumas coisas ainda não funcionam. Espero que gostem!👉👈')
+})
 
 
 // Button to open menu bar
