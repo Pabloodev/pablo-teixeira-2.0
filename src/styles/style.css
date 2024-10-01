@@ -7,52 +7,31 @@
     border: none;
     list-style: none;
     font-family: Poppins;
-    color: white;
     text-decoration: none;
 }
 
-.hidden {
-    display: none;
-}
-
-/* MENU */
-
-.menu-container {
-    background-color: var(--bg-color);
-    border: 1px solid var(--purple-general);
-    position: absolute;
-    left: 5.5%;
-    top: 75%;
-    flex-direction: column;
-    text-align: center;
-}
-
-.menu-container ul {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    padding: 15px;
-    
-}
-
-.menu-container a:hover {
-    color: var(--gray-strong);
-    transition: 0.2s;
-}
-
+img {width: 40px;}
 
 /* GLOBAL */
 
-img {width: 40px;} /* Reseting IMG widths of web */
-
 :root {
-    --bg-color: #13131F;
+    --gray-very-strong: #13131F;
     --purple-general: #7026B0;
     --gray-strong: #a5a5a5;
 }
 
+.white-theme {
+    color: var(--gray-very-strong)!important;
+    background-color: white!important;
+}
+
+.hidden { display: none; }
+
+a { color: white }
+
 body {
-    background-color: var(--bg-color);
+    background-color: var(--gray-very-strong);
+    color: white;
 }
 
 .secundarys-sections {
@@ -60,40 +39,6 @@ body {
     flex-direction: column;
     margin-bottom: 10vw;
     gap: 80px;
-}
-
-@keyframes float {
-    0% {
-        transform: translateY(0);
-    }
-    50% {
-        transform: translateY(-20px);
-    }
-    100% {
-        transform: translateY(0);
-    }
-}
-
-
-/* STYLES */
-
-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 3vw 7vw;
-    border-bottom: 1px solid var(--purple-general);
-    position: relative;
-}
-
-.logo {
-    font-weight: 600;
-    font-size: 20px;
-}
-
-.change-theme {
-    display: flex;
-    gap: 20px;
 }
 
 button {
@@ -114,6 +59,77 @@ section {
     min-height: calc(100vh - 130px);
 }
 
+p {
+    color: var(--gray-strong);
+    max-width: 50%;
+    text-align: center;
+    line-height: 45px;
+}
+
+/* ANIMATION TO PICTURE */
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* STYLES */
+
+/* HEADER */
+
+header {
+    background-color: var(--gray-very-strong);
+    border-bottom: 1.5px solid var(--purple-general);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    padding: 3vw 7vw;
+}
+
+.menu-container {
+    background-color: var(--gray-very-strong);
+    border: 1px solid var(--purple-general);
+    position: absolute;
+    left: 5.5%;
+    top: 75%;
+    text-align: center;
+}
+
+.menu-container ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 15px;
+}
+
+.menu-container a:hover {
+    color: var(--gray-strong);
+    transition: 0.2s;
+}
+
+.logo {
+    font-weight: 600;
+    font-size: 20px;
+    color: white !important;
+}
+
+.change-theme {
+    display: flex;
+    gap: 20px;
+}
+
+/* HEADER */
+
+/* HOME */
+
 .home {
     padding: 0vw 12vw;
 }
@@ -125,7 +141,10 @@ section {
 }
 
 .resume {
-    color: var(--gray-strong)
+    color: var(--gray-strong);
+    max-width: 100%;
+    line-height: 30px;
+    text-align: start;
 }
 
 .social-media {
@@ -133,18 +152,18 @@ section {
     gap: 15px
 }
 
+.social-media li a:hover img{
+    transform: scale(1.1);
+}
+
 .main-picture {
     width: 450px;
     animation: float infinite 3s;
 }
 
+/* HOME */
 
-.text-about-container {
-    color: var(--gray-strong);
-    max-width: 50%;
-    text-align: center;
-    line-height: 45px;
-}
+/* ABOUT */
 
 .cv-btn {
     background-color: var(--purple-general);
@@ -153,6 +172,10 @@ section {
     font-weight: 500;
     font-size: 16px;
 }
+
+/* ABOUT */
+
+/* HABILITIES */
 
 .habilidades-list {
     display: flex;
@@ -163,17 +186,17 @@ section {
     width: 80px;
 }
 
-.social-media li a:hover img{
-    transform: scale(1.1);
-}
+/* HABILITIES */
+
+/* PROJETOS */
 
 #projetos {
-    position: relative;
-    margin-bottom: 50px;
+    margin-bottom: 50px;  /* EXCLUIR ESSA LINHA DEPOIS */
 }
 
 .up-btn {
-    position: absolute;
+    position: fixed;
+    z-index: 900;
     bottom: 1%;
     right: 10%;
 }
@@ -181,3 +204,5 @@ section {
 .up-btn img {
     width: 60px;
 }
+
+/* PROJETOS */
