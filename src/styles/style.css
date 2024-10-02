@@ -66,6 +66,17 @@ p {
     line-height: 45px;
 }
 
+.up-btn {
+    position: fixed;
+    z-index: 900;
+    bottom: 2%;
+    right: 5%;
+}
+
+.up-btn img {
+    width: 60px;
+}
+
 /* ANIMATION TO PICTURE */
 
 @keyframes float {
@@ -188,18 +199,35 @@ header {
     margin-bottom: 50px;  /* EXCLUIR ESSA LINHA DEPOIS */
 }
 
-.up-btn {
-    position: fixed;
-    z-index: 900;
-    bottom: 2%;
-    right: 5%;
+.project-list {
+    display: flex;
+    gap: 20px;
 }
 
-.up-btn img {
-    width: 60px;
+.project-list img {
+    width: 400px;
 }
 
-/* PROJETOS */
+.project-list li {
+    border: 1px solid var(--purple-general);
+    border-bottom: 5px solid var(--purple-general);
+    position: relative;
+}
+
+.project-list li .title-project {
+    text-align: center;
+}
+
+.project-list li:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+
+
+
+
+/* FOOTER */
 
 footer {
     border-top: 1px solid var(--purple-general);
