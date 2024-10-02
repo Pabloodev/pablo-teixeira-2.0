@@ -17,7 +17,7 @@ img {width: 40px;}
 :root {
     --gray-very-strong: #13131F;
     --purple-general: #7026B0;
-    --gray-strong: #a5a5a5;
+    --gray-strong: #888888;
 }
 
 .white-theme {
@@ -126,8 +126,6 @@ header {
     gap: 20px;
 }
 
-/* HEADER */
-
 /* HOME */
 
 .home {
@@ -161,8 +159,6 @@ header {
     animation: float infinite 3s;
 }
 
-/* HOME */
-
 /* ABOUT */
 
 .cv-btn {
@@ -173,20 +169,18 @@ header {
     font-size: 16px;
 }
 
-/* ABOUT */
-
 /* HABILITIES */
 
 .habilidades-list {
     display: flex;
+    max-width: 80%;
+    flex-wrap: wrap;
     gap: 20px
 }
 
 .habilidades-list img {
     width: 80px;
 }
-
-/* HABILITIES */
 
 /* PROJETOS */
 
@@ -197,8 +191,8 @@ header {
 .up-btn {
     position: fixed;
     z-index: 900;
-    bottom: 1%;
-    right: 10%;
+    bottom: 2%;
+    right: 5%;
 }
 
 .up-btn img {
@@ -206,3 +200,35 @@ header {
 }
 
 /* PROJETOS */
+
+footer {
+    border-top: 1px solid var(--purple-general);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: var(--gray-strong);
+    font-size: 13px;
+}
+
+/* REPONSIVITY */
+
+@media screen and (max-width: 650px) {
+    .home {
+        text-align: center;
+        margin-top: 60px;
+        flex-direction: column;
+    }
+
+    .resume {
+        text-align: center;
+    }
+
+    .social-media {
+        align-self: center;
+    }
+
+    p {
+        max-width: 90%;
+    }
+}
