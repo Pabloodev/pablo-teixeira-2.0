@@ -201,6 +201,9 @@ header {
 
 .project-list {
     display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
     gap: 20px;
 }
 
@@ -258,5 +261,9 @@ footer {
 
     p {
         max-width: 90%;
+    }
+
+    .project-list img {
+        width: 300px;
     }
 }

@@ -1,6 +1,6 @@
-document.addEventListener('DOMContentLoaded', () => {
-    alert('Este site está em desenvolvimento, então é provável que algumas funcionalidades contenham alguns bugs!')
-})
+// document.addEventListener('DOMContentLoaded', () => {
+//     alert('Este site está em desenvolvimento, então é provável que algumas funcionalidades contenham alguns bugs!')
+// })
 
 
 // Button to open menu bar
@@ -26,4 +26,3 @@ clearTheme.addEventListener('click', () => {
 darkTheme.addEventListener('click', () => {
     body.classList.remove('white-theme')
 })
-
