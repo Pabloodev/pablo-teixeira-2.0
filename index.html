@@ -1,194 +1,291 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" href="src/imagens/favicon-pablo.png" type="image/x-icon">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="src/imagens/favicon-pablo.png"
+      type="image/x-icon"
+    />
+    <title>Pablo Teixeira</title>
 
-  <title>pablodev - Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- FONT -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-
-
-<!-- GENERAL LINKS -->
-  <link rel="stylesheet" href="src/styles/style.css">
-  <script defer src="app.js"></script>
-
-</head>
-<body id="general-document">
-
-  <script>
-    AOS.init();
-  </script>
-
-  <header>
-
-    <button id="menu">
-      <img src="https://img.icons8.com/?size=100&id=83195&format=png&color=7026B0" alt="Menu Icon, click to open the menu">
-    </button>
-
-    <span class="logo">pablodev.</span>
-
-    <div class="change-theme">
-    
-      <button id="clear-btn">
-        <img src="https://img.icons8.com/?size=100&id=60002&format=png&color=7026B0" alt="Click to change to the clear theme">
+    <link rel="stylesheet" href="src/styles/style.css" />
+    <script defer src="app.js"></script>
+  </head>
+  <body id="general-document">
+    <header>
+      <button id="menu">
+        <img
+          src="https://img.icons8.com/?size=100&id=83195&format=png&color=7026B0"
+          alt="Menu Icon, click to open the menu"
+        />
       </button>
 
-      <button id="dark-btn">
-        <img src="https://img.icons8.com/?size=100&id=59841&format=png&color=7026B0" alt="Click to change to the dark theme">
-      </button>
+      <span class="logo">pablodev.</span>
 
-    </div>
+      <div class="change-theme">
+        <button id="clear-btn">
+          <img
+            src="https://img.icons8.com/?size=100&id=60002&format=png&color=7026B0"
+            alt="Click to change to the clear theme"
+          />
+        </button>
 
-    <div id="menu-container" class="menu-container hidden">
-      <ul>
-        <li>
-          <a href="#">Inicio</a>
-        </li>
-        <li>
-          <a href="#sobre">Sobre</a>
-        </li>
-        <li>
-          <a href="#habilidades">Habilidades</a>
-        </li>
-        <li>
-          <a href="#projetos">Projetos</a>
-        </li>
-      </ul>
-    </div>
-    
-  </header>
-
-  <section class="home">
-
-    <div class="container-info">
-      
-      <div>
-        <h1>Pablo Teixeira</h1>
-        <span>Fullstack Developer</span>
+        <button id="dark-btn">
+          <img
+            src="https://img.icons8.com/?size=100&id=59841&format=png&color=7026B0"
+            alt="Click to change to the dark theme"
+          />
+        </button>
       </div>
-      
 
-      <p class="resume">Um desenvolvedor em formação, sempre focado em melhorar minha habilidades💜</p>
+      <div id="menu-container" class="menu-container hidden">
+        <ul>
+          <li>
+            <a href="#">Inicio</a>
+          </li>
+          <li>
+            <a href="#sobre">Sobre</a>
+          </li>
+          <li>
+            <a href="#habilidades">Habilidades</a>
+          </li>
+          <li>
+            <a href="#projetos">Projetos</a>
+          </li>
+        </ul>
+      </div>
+    </header>
 
-      <ul class="social-media">
+    <section class="home">
+      <div class="container-info">
+        <div>
+          <h1>Pablo Teixeira</h1>
+          <span>Fullstack Developer</span>
+        </div>
 
+        <p class="resume">
+          Um desenvolvedor em formação, sempre focado em melhorar minha
+          habilidades💜
+        </p>
+
+        <ul class="social-media">
+          <li>
+            <a href="https://github.com/Pabloodev" target="_blank">
+              <img
+                class="icon-social-media"
+                src="https://img.icons8.com/?size=100&id=62856&format=png&color=7026B0"
+                alt="Aperte para ir para o github"
+                title="Github"
+              />
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="https://www.instagram.com/pablin_teixeira/"
+              target="_blank"
+            >
+              <img
+                class="icon-social-media"
+                src="https://img.icons8.com/?size=100&id=59813&format=png&color=7026B0"
+                alt="Aperte para ir para o instagram"
+                title="Instagram"
+              />
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="https://www.linkedin.com/in/pabloteixeiraimproving/"
+              target="_blank"
+            >
+              <img
+                class="icon-social-media"
+                src="https://img.icons8.com/?size=100&id=98960&format=png&color=7026B0"
+                alt="Aperte para ir para o linkedin"
+                title="Linkedin"
+              />
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <img
+        class="main-picture"
+        src="src/imagens/foto-portfolio.png"
+        title="pablodev"
+        alt="Foto de Pablo Teixeira (pablodev)"
+      />
+    </section>
+
+    <section id="sobre" class="sobre secundarys-sections">
+      <h2>Sobre</h2>
+
+      <p class="text-about-container">
+        "Tenho 20 anos e sou formado em Gestão de TI. Atualmente, trabalho como
+        analista de sistemas na TJ TELECOM. Com certa experiencia em React, JavaScript, CSS e HTML decidi que chegou o momento de ser Fullstack, onde estou depositando meu foco!"
+      </p>
+
+      <a href="src/cv-pablodev.pdf" download="Currículo Pablo Teixeira">
+        <button class="cv-btn">Baixar CV</button>
+      </a>
+    </section>
+
+    <section id="habilidades" class="secundarys-sections">
+      <h2>Habilidades</h2>
+
+      <ul class="habilidades-list">
         <li>
-          <a href="https://github.com/Pabloodev" target="_blank">
-            <img class="icon-social-media" src="https://img.icons8.com/?size=100&id=62856&format=png&color=7026B0" alt="Aperte para ir para o github" title="Github">
-          </a>
-          
+          <img
+            src="https://img.icons8.com/?size=100&id=9nmz9TYzN8iO&format=png&color=7026B0"
+            alt="HTML"
+            title="HTML"
+          />
         </li>
-
         <li>
-          <a href="https://www.instagram.com/pablin_teixeira/" target="_blank">
-            <img class="icon-social-media" src="https://img.icons8.com/?size=100&id=59813&format=png&color=7026B0" alt="Aperte para ir para o instagram" title="Instagram">
-          </a>
-          
+          <img
+            src="https://img.icons8.com/?size=100&id=iw4JVMdjnJXY&format=png&color=7026B0"
+            alt="CSS"
+            title="CSS"
+          />
         </li>
-
         <li>
-          <a href="https://www.linkedin.com/in/pabloteixeiraimproving/" target="_blank">
-            <img class="icon-social-media" src="https://img.icons8.com/?size=100&id=98960&format=png&color=7026B0" alt="Aperte para ir para o linkedin" title="Linkedin">
-          </a>
+          <img
+            src="https://img.icons8.com/?size=100&id=39854&format=png&color=7026B0"
+            alt="JS"
+            title="JS"
+          />
         </li>
-
+        <li>
+          <img
+            src="https://img.icons8.com/?size=100&id=122637&format=png&color=7026B0"
+            alt="React"
+            title="React"
+          />
+        </li>
+        <li>
+          <img
+            src="https://img.icons8.com/?size=100&id=101379&format=png&color=7026B0"
+            alt="Python"
+            title="Python"
+          />
+        </li>
       </ul>
-    </div>
 
-    <img class="main-picture" src="src/imagens/foto-portfolio.png" title="pablodev" alt="Foto de Pablo Teixeira (pablodev)">
+      <p class="text-about-container">
+        "Essas são algumas das tecnologias que tenho conhecimento, fiz questão de colocar apenas as principais, agora a meta é começar a preencher esse container com linguagens backends"
+      </p>
+    </section>
 
-  </section>
+    <section id="projetos" class="secundarys-sections">
+      <h2>Projetos</h2>
 
-  <section id="sobre" class="sobre secundarys-sections">
-    <h2>Sobre</h2>
+      <p>
+        Antes de conhecer meus projetos preciso contar que estou preparando algo
+        grande, vem novidades por ai!
+      </p>
 
-    <p class="text-about-container">"Tenho 20 anos e sou formado em Gestão de TI. Atualmente, trabalho como analista de sistemas na TJ TELECOM. Sempre estive imerso no mundo da tecnologia e, no momento, meu foco é me tornar um desenvolvedor Fullstack.
-      Atualmente estou estudando React porém já tenho certa experencia em HTML, CSS, JS e Python."
-    </p>
+      <ul class="project-list">
+        <li>
+          <a href="https://pabloodev.github.io/age-calculator/" target="_blank">
+            <img
+              src="src/imagens/age-calculator.png"
+              alt="Foto do projeto Age Calculator"
+            />
+          </a>
 
-    <a href="src/cv-pablodev.pdf" download="Currículo Pablo Teixeira">
-      <button class="cv-btn">Baixar CV</button>
+          <div class="title-project">
+            <h3>Age Calculator</h3>
+          </div>
+        </li>
+
+        <li>
+          <a
+            href="https://pabloodev.github.io/password-generator/"
+            target="_blank"
+          >
+            <img
+              src="src/imagens/password-generator.png"
+              alt="Foto do projeto Password Generator"
+            />
+          </a>
+
+          <div class="title-project">
+            <h3>Password Generator</h3>
+          </div>
+        </li>
+
+        <li>
+          <a href="https://pabloodev.github.io/pomodoro-app/" target="_blank">
+            <img
+              loading="lazy"
+              src="./src/imagens/pomodoro.png"
+              alt="Foto do projeto Pomodoro app"
+            />
+          </a>
+
+          <div class="title-project">
+            <h3>Pomodoro app</h3>
+          </div>
+        </li>
+
+        <li>
+          <a href="https://pabloodev.github.io/clima-app/" target="_blank">
+            <img
+              loading="lazy"
+              src="./src/imagens/clima.png"
+              alt="Foto do projeto Clima Application"
+            />
+          </a>
+
+          <div class="title-project">
+            <h3>Clima app</h3>
+          </div>
+        </li>
+
+        <li>
+          <a href="https://pabloodev.github.io/time-tracking/" target="_blank">
+            <img
+              loading="lazy"
+              src="src/imagens/time-tracking.png"
+              alt="Foto do projeto Time Tracking"
+            />
+          </a>
+
+          <div class="title-project">
+            <h3>Time Tracking</h3>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <footer>
+      <span
+        >Desenvolvido por © Pablo Teixeira. Todos os direitos reservados</span
+      >
+      <span
+        >Icons do site em
+        <a href="https://icons8.com/" target="_blank">Icons 8</a></span
+      >
+    </footer>
+
+    <a class="up-btn" href="#">
+      <button>
+        <img
+          src="https://img.icons8.com/?size=100&id=100508&format=png&color=7026B0"
+          alt="Click to rollup the website"
+          title="Click to up site"
+        />
+      </button>
     </a>
-
-  </section>
-
-  <section id="habilidades" class="secundarys-sections">
-    <h2>Habilidades</h2>
-
-    <ul class="habilidades-list">
-      <li>
-        <img src="https://img.icons8.com/?size=100&id=9nmz9TYzN8iO&format=png&color=7026B0" alt="HTML" title="HTML">
-      </li>
-      <li>
-        <img src="https://img.icons8.com/?size=100&id=iw4JVMdjnJXY&format=png&color=7026B0" alt="CSS" title="CSS">
-      </li>
-      <li>
-        <img src="https://img.icons8.com/?size=100&id=39854&format=png&color=7026B0" alt="JS" title="JS">
-      </li>
-      <li>
-        <img src="https://img.icons8.com/?size=100&id=122637&format=png&color=7026B0" alt="React" title="React">
-      </li>
-      <li>
-        <img src="https://img.icons8.com/?size=100&id=101379&format=png&color=7026B0" alt="Python" title="Python">
-      </li>
-    </ul>
-
-    <p class="text-about-container">"Essas são as tecnologias com as quais tenho um bom conhecimento. Naturalmente, estou mais familiarizado com algumas do que com outras. Por exemplo, no caso do React, estou apenas começando e me considero iniciante nessa tecnologia."</p>
-  </section>
-
-  <section id="projetos" class="secundarys-sections">
-    <h2>Projetos</h2>
-
-    <p>Antes de conhecer meus projetos preciso contar que estou preparando algo grande, vem novidades por ai!</p>
-
-    <ul class="project-list">
-      <li>
-        <a href="https://pabloodev.github.io/age-calculator/" target="_blank">
-          <img src="src/imagens/age-calculator.png" alt="Foto do projeto Age Calculator">
-        </a>
-
-        <div class="title-project">
-          <h3>Age Calculator</h3>
-        </div>
-      </li>
-
-      <li>
-        <a href="https://pabloodev.github.io/password-generator/" target="_blank">
-          <img src="src/imagens/password-generator.png" alt="Foto do projeto Password Generator">
-        </a>
-
-        <div class="title-project">
-          <h3>Password Generator</h3>
-        </div>
-      </li>
-
-      <li>
-        <a href="https://pabloodev.github.io/time-tracking/" target="_blank">
-          <img src="src/imagens/time-tracking.png" alt="Foto do projeto Time Tracking">
-        </a>
-
-        <div class="title-project">
-          <h3>Time Tracking</h3>
-        </div>
-      </li>
-    </ul>
-
-  </section>
-
-  <footer>
-    <span>Desenvolvido por © Pablo Teixeira. Todos os direitos reservados</span>
-    <span>Icons do site em <a href="https://icons8.com/" target="_blank">Icons 8</a></span>
-  </footer>
-
-  <a class="up-btn" href="#">
-    <button>
-      <img src="https://img.icons8.com/?size=100&id=100508&format=png&color=7026B0" alt="Click to rollup the website" title="Click to up site">
-    </button>
-  </a>
-</body>
+  </body>
 </html>
