@@ -12,10 +12,8 @@
 
 img {width: 40px;}
 
-/* GLOBAL */
-
 :root {
-    --gray-very-strong: #13131F;
+    --gray-very-strong: #0b0b0e;
     --purple-general: #7026B0;
     --gray-strong: #888888;
 }
@@ -225,10 +223,6 @@ header {
     transform: scale(1.1);
     transition: 0.5s;
 }
-
-
-
-
 
 /* FOOTER */
 
